@@ -18,7 +18,7 @@ prettifySeq = map (toLower . head)
 
 main :: IO()
 main = do 
-    let explode = bombExplode $ prettifySeq ["White", "Red", "Green", "white"]
+    let explode = bombExplode $ prettifySeq ["White", "Red", "Green", "white", "White"]
     if explode 
         then putStrLn "Bomb exploded"
     else putStrLn "Bomb diffused safely"
